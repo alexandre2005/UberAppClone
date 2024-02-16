@@ -2,7 +2,8 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-import LoginScreen from '../screens/LoginScreen';
+import LoginScreen from '../screens/loginscreen';
+import OtpVerificationScreen from "../screens/OtpVerificationScreen";
 
 const RootNavigation = () => {
 
@@ -12,6 +13,7 @@ const RootNavigation = () => {
         <NavigationContainer>
             <stack.Navigator>
                 <stack.Screen name="Login" component={LoginScreen} options={{ headerShown:false }}/>
+                <stack.Screen name="OtpVerify" component={OtpVerificationScreen} options={{ headerShown:false }}/>
             </stack.Navigator>
         </NavigationContainer>
     )
