@@ -99,6 +99,7 @@ const OtpVerificationScreen = () => {
                     alignItems: 'center',
                     gap: 6,
                   }}
+                  onPress={() => navigation.navigate('Tabs')}
                 >
                   <Text style={{ fontSize: 20 }}>Next</Text>
                   <AntDesign name="arrowright" size={28} color="black" style={{ marginTop: 4 }} />
